@@ -1,8 +1,8 @@
 class Uffizzi < Formula
   desc "Self-serve developer platforms in minutes, not months with k8s virtual clusters"
   homepage "https://uffizzi.com"
-  url "https://github.com/UffizziCloud/uffizzi_cli/archive/refs/tags/v2.3.2.tar.gz"
-  sha256 "8437dd01ae74b4de562766700ab71cf0346bf354bbf32451d273ea90c954ad8c"
+  url "https://github.com/UffizziCloud/uffizzi_cli/archive/refs/tags/v2.3.3.tar.gz"
+  sha256 "72f60f25350803ecb71b3ca20020393f76914c0eeb1b59187d500fbfab89a1d1"
   license "Apache-2.0"
 
   depends_on "ruby@3.0"
@@ -59,8 +59,8 @@ class Uffizzi < Formula
   end
 
   resource "uffizzi-cli" do
-    url "https://rubygems.org/gems/uffizzi-cli-2.3.2.gem"
-    sha256 "40194fe562248cecd26edc3fdbf34171ef0d0c02a13a4b20ed290300f69e965f"
+    url "https://rubygems.org/gems/uffizzi-cli-2.3.3.gem"
+    sha256 "11f1edac8dd6d08f12a2fef3d4494a664f4948a052cb1830641ccd6a9bbc789b"
   end
 
   def install
