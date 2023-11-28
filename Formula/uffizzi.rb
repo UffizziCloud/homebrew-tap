@@ -1,12 +1,13 @@
 class Uffizzi < Formula
   desc "Self-serve developer platforms in minutes, not months with k8s virtual clusters"
   homepage "https://uffizzi.com"
-  url "https://github.com/UffizziCloud/uffizzi_cli/archive/refs/tags/v2.3.3.tar.gz"
-  sha256 "72f60f25350803ecb71b3ca20020393f76914c0eeb1b59187d500fbfab89a1d1"
+  url "https://github.com/UffizziCloud/uffizzi_cli/archive/refs/tags/v2.3.4.tar.gz"
+  sha256 "170849b4054e45b6a4c0fd8343f05e55817c8f10b6190d7f0d3edf1ae994629e"
   license "Apache-2.0"
 
   depends_on "ruby@3.0"
   depends_on "skaffold"
+  depends_on "helm@3"
 
   resource "activesupport" do
     url "https://rubygems.org/gems/activesupport-6.1.4.1.gem"
@@ -19,8 +20,8 @@ class Uffizzi < Formula
   end
 
   resource "faker" do
-    url "https://rubygems.org/gems/faker-3.2.1.gem"
-    sha256 "d6b201b520213f6d985ac9f9f810154397a146ca22c1d3ff0a6504ef37c5517b"
+    url "https://rubygems.org/gems/faker-3.2.2.gem"
+    sha256 "1eca58d4611fcc07e1b2b89c6e394a9d2ff780e943752f5ea2dd60e0cc3c84c5"
   end
 
   resource "launchy" do
@@ -34,18 +35,18 @@ class Uffizzi < Formula
   end
 
   resource "securerandom" do
-    url "https://rubygems.org/gems/securerandom-0.2.2.gem"
-    sha256 "5fcb3b8aa050bac5de93a5e22b69483856f70d43affeb883bce0c58d71360131"
+    url "https://rubygems.org/gems/securerandom-0.3.0.gem"
+    sha256 "3764e51c62393f0e5378637362836db3cf0c3223e2ae134eadcb347999105dda"
   end
 
   resource "sentry-ruby" do
-    url "https://rubygems.org/gems/sentry-ruby-5.11.0.gem"
-    sha256 "27f603638d75d28b974def362792f442ae39e3e1c1496427910f9a0f434f3a71"
+    url "https://rubygems.org/gems/sentry-ruby-5.14.0.gem"
+    sha256 "0940fb8b5de834aa735e29ae674332be4a5a62c303669c4d98a817ae6adac280"
   end
 
   resource "thor" do
-    url "https://rubygems.org/gems/thor-1.2.2.gem"
-    sha256 "2f93c652828cba9fcf4f65f5dc8c306f1a7317e05aad5835a13740122c17f24c"
+    url "https://rubygems.org/gems/thor-1.3.0.gem"
+    sha256 "1adc7f9e5b3655a68c71393fee8bd0ad088d14ee8e83a0b73726f23cbb3ca7c3"
   end
 
   resource "tty-prompt" do
@@ -59,8 +60,8 @@ class Uffizzi < Formula
   end
 
   resource "uffizzi-cli" do
-    url "https://rubygems.org/gems/uffizzi-cli-2.3.3.gem"
-    sha256 "11f1edac8dd6d08f12a2fef3d4494a664f4948a052cb1830641ccd6a9bbc789b"
+    url "https://rubygems.org/gems/uffizzi-cli-2.3.4.gem"
+    sha256 "b0d081dc37cb08eafbc18dee3056eaab099401d74335a8d0a4d0e06a057e9a70"
   end
 
   def install
