@@ -85,3 +85,4 @@ class Uffizzi < Formula
     assert_match server_url, shell_output("#{bin}/uffizzi config get-value server")
   end
 end
+
